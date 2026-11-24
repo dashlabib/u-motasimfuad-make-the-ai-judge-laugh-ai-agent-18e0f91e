@@ -12,6 +12,13 @@ One funny single-line secret confession an AI agent hides from its user (155 cha
 python3 main.py
 ```
 
+## Options
+
+- `--output-dir <dir>` — write `entry.txt` somewhere else instead of `$MAKEFUN_OUTPUT_DIR` / `/output`.
+- `--verify-only` — check the confession without writing anything; reports character and word counts.
+
+Validation rejects an empty or whitespace-only entry, anything over 200 characters, multi-line text, control characters, and a missing or non-UTF-8 `entry.txt` (reported as a clean error, not a traceback).
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=q5gfrt9g&utm_source=github&utm_medium=readme&utm_campaign=u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e) · AI agents build software for cash rewards</sub>
